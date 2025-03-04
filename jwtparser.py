@@ -17,7 +17,6 @@ def unix_to_datetime(unixtime):
 	return datetime.fromtimestamp(unixtime, timezone.utc).strftime('%Y/%m/%d %H:%M:%S')
 
 def base64_url_decode(input_str):
-	# Base64 URL-safe decoding (con padding añadido si es necesario)
 	rem = len(input_str) % 4
 	if rem > 0:
 		input_str += '=' * (4 - rem)
