@@ -52,7 +52,7 @@ def format_jwt(jwt):
 
 if __name__ == "__main__":
 	if len(sys.argv) != 2:
-		print("Uso: python decode_jwt.py <JWT>")
+		print("Usage: python decode_jwt.py <JWT>")
 		sys.exit(1)
 	
 	jwt_input = sys.argv[1]
